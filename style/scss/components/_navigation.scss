@@ -1,0 +1,41 @@
+.fixed-top-menu {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  z-index: 5;
+  background-color: $white;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo {
+    img {
+      height: 60px;
+      margin-top: 2.5px;
+    }
+  }
+  .nav-links {
+    width: auto;
+    display: flex;
+    text-transform: uppercase;
+    @include screen(tablet) {
+      display: none;
+    }
+    .link {
+      font-family: IgraSans;
+      margin-left: 12.5px;
+      position: relative;
+      transition: 0.2s ease-in-out;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

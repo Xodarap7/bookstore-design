@@ -1,0 +1,73 @@
+.input-type-standart,
+.input-type-password,
+.input-type-file,
+.input-type-select {
+  width: 300px;
+  height: auto;
+  margin-top: 15px;
+  label {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    font-weight: 400;
+    border-bottom: 3px solid $black;
+    &:focus {
+      border-color: $green;
+    }
+  }
+}
+
+.input-type-password {
+  input {
+    font-size: 25px;
+  }
+}
+
+.input-type-file,
+.input-type-select {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid $black;
+  position: relative;
+  .input-text {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 16px;
+  }
+  .input-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    i {
+      font-size: 20px;
+    }
+  }
+  input,
+  select {
+    height: 37px;
+    opacity: 0;
+  }
+}
+
+.input-error {
+  input {
+    border-color: $red;
+    margin-bottom: 7.5px;
+  }
+
+  small {
+    font-size: 14px;
+    font-weight: 500;
+    color: $red;
+  }
+}

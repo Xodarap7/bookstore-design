@@ -1,0 +1,70 @@
+footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: $black;
+  .container {
+    height: 100%;
+    align-items: center;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    @include screen(tablet-wide) {
+      flex-direction: column;
+    }
+    .footer-logo {
+      width: 220px;
+      height: 100px;
+      @include screen(tablet-wide) {
+        margin-top: 15px;
+      }
+    }
+    .social-links {
+      width: 220px;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      @include screen(tablet-wide) {
+        margin: 15px 0px 15px 0px;
+      }
+      .link {
+        width: 60px;
+        height: 60px;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: 0.1s ease-in-out;
+        i {
+          color: $black;
+          font-size: 28px;
+        }
+        &:hover {
+          background-color: $white;
+          i {
+            color: $red;
+          }
+        }
+      }
+    }
+    .footer-links {
+      width: 250px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .links-list {
+        display: flex;
+        flex-direction: column;
+        a {
+          color: $white;
+          margin-top: 8.5px;
+        }
+      }
+      @include screen(tablet-wide) {
+        display: none;
+      }
+    }
+  }
+}

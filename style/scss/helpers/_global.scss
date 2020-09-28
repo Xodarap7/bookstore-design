@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $black;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.container {
+  width: 1270px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include screen(desktop) {
+    width: 95%;
+  }
+}
