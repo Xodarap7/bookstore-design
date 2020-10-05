@@ -3,6 +3,22 @@ footer {
   height: auto;
   position: relative;
   background-color: $black;
+  .shape-divider-bottom {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-top: 2px;
+    svg {
+      display: block;
+      width: calc(100% + 1.3px);
+      height: calc(100px + 1.3px);
+      transform: rotate(180deg);
+    }
+    .shape-fill {
+      fill: $white;
+    }
+  }
   .container {
     height: 100%;
     align-items: center;
@@ -35,13 +51,12 @@ footer {
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        transition: 0.1s ease-in-out;
         i {
           color: $black;
           font-size: 28px;
+          transition: 0.1s ease-in-out;
         }
         &:hover {
-          background-color: $white;
           i {
             color: $red;
           }
@@ -60,6 +75,10 @@ footer {
         a {
           color: $white;
           margin-top: 8.5px;
+          transition: 0.1s ease-in-out;
+          &:hover {
+            color: $red;
+          }
         }
       }
       @include screen(tablet-wide) {

@@ -29,6 +29,9 @@ h6 {
 
 h1 {
   font-size: 4.5rem;
+  @include screen(tablet) {
+    font-size: 3.5rem;
+  }
 }
 h2 {
   font-size: 4rem;

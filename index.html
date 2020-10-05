@@ -2,22 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Книги, Кофе и Другие Измерения</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style/css/main.min.css" />
-    <!-- SLICK GALLERY -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
-    />
     <!-- FONT-AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./style/css/icons.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/css/main.min.css" />
   </head>
   <body>
     <nav class="fixed-top-menu">
@@ -26,23 +16,23 @@
           <img src="./images/logo_stars.png" alt="" />
         </div>
         <div class="nav-links">
-          <a href="" class="link">Книги</a>
-          <a href="" class="link">Кофе</a>
-          <a href="" class="link">Др. Измерения</a>
-          <a href="" class="link">| Контакты</a>
+          <a href="#books" id="anchorLink" class="link">Книги</a>
+          <a href="#coffee" id="anchorLink" class="link">Кофе</a>
+          <a href="#lectorium" id="anchorLink" class="link">Др. Измерения</a>
+          <a href="#contacts" id="anchorLink" class="link">| Контакты</a>
         </div>
       </div>
       <div class="nav-sidebar-button"></div>
     </nav>
     <!-- CONTENT -->
     <main>
-      <section class="section--welcome-page__hero">
+      <section class="section--welcome-page__hero particles-js">
         <div class="container">
           <div class="content-wrapper">
             <div class="title__hero">
-              <a href=""><h1>Книги,</h1></a>
-              <a href=""><h1>Кофе</h1></a>
-              <a href=""
+              <a href="#books" id="anchorLink"><h1>Книги,</h1></a>
+              <a href="#coffee" id="anchorLink"><h1>Кофе</h1></a>
+              <a href="#lectorium" id="anchorLink"
                 ><h1>
                   и Др. <br />
                   И<span class="fix-font">з</span>мерения
@@ -59,38 +49,82 @@
             </div>
           </div>
         </div>
+        <div class="bg-pattern"></div>
       </section>
       <!-- SECTION BOOKS -->
-      <section class="section--welcome-page__books">
+      <section id="books" class="section--welcome-page__books">
         <div class="container">
-          <div class="grid-container">
-            <div class="section--title-small">
-              <img src="./images/books-china.png" alt="" />
-            </div>
-            <div class="section--title-small">
-              <h1>Books</h1>
-            </div>
-            <div class="section--call-to-action no-left">
-              <div class="text">
-                <h6>Книги,</h6>
-                <h6>обычное</h6>
-                <h6>и необычное</h6>
+          <div class="grid-container-4fr">
+            <div class="column">
+              <div class="section--title-small">
+                <h1 class="font-black">Книжный</h1>
               </div>
-              <a href="" class="btn btn-x1 btn-black-fill">Перейти</a>
-            </div>
-            <div class="section--call-to-action">
-              <div class="text">
-                <h6>Сувениры,</h6>
-                <h6>Канцтовары</h6>
-                <h6>и Порталы</h6>
+              <div class="section--call-to-action">
+                <div class="text font-black">
+                  <h5>Книги,</h5>
+                  <h5>обычное</h5>
+                  <h5>и необычное</h5>
+                </div>
+                <a href="./pages/books.html" class="btn btn-x1 btn-red-fill"
+                  >Перейти</a
+                >
               </div>
-              <a href="" class="btn btn-x1 btn-black-fill">Перейти</a>
+              <div class="section--row-design">
+                <div class="design-container">
+                  <img src="./images/svg/double_star--black.svg" alt="" />
+                </div>
+                <div class="design-container">
+                  <img src="./images/svg/double_star--black.svg" alt="" />
+                </div>
+                <div class="design-container">
+                  <img src="./images/svg/double_star--black.svg" alt="" />
+                </div>
+              </div>
             </div>
+            <div class="column">
+              <div class="section--title-small">
+                <h1 class="font-black">Канцелярия</h1>
+              </div>
+              <div class="section--call-to-action">
+                <div class="text font-black">
+                  <h5>Сувениры,</h5>
+                  <h5>Канцтовары</h5>
+                  <h5>и Порталы</h5>
+                </div>
+                <a
+                  href="./pages/chancellery.html"
+                  class="btn btn-x1 btn-red-fill"
+                  >Перейти</a
+                >
+              </div>
+              <div class="section--row-design">
+                <div class="design-container">
+                  <img src="./images/svg/double_star--black.svg" alt="" />
+                </div>
+                <div class="design-container">
+                  <img src="./images/svg/double_star--black.svg" alt="" />
+                </div>
+                <div class="design-container">
+                  <img src="./images/svg/double_star--black.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-container-2fr">
             <div class="section--title-big">
-              <h1>Книги</h1>
+              <h1>Расписание Консультантов</h1>
             </div>
-            <div class="section--title-small no-btop">
-              <h3>Расписание консультантов</h3>
+            <div class="section--consultant-time">
+              <div class="content">
+                <div class="content--date">
+                  <h6>27</h6>
+                  <h6>Сен</h6>
+                </div>
+                <div class="content--text">
+                  <h6>Высокинский Александр</h6>
+                  <h6>8:00 - 12:00</h6>
+                </div>
+              </div>
             </div>
             <div class="section--consultant-time">
               <div class="content">
@@ -156,11 +190,11 @@
         </div>
       </section>
       <!-- SECTION COFFEE -->
-      <section class="section--welcome-page__coffee">
+      <section id="coffee" class="section--welcome-page__coffee">
         <div class="container">
           <div class="grid-container">
             <div class="pattern-left">
-              <img src="./images/pattern_3.png" alt="" />
+              <img src="./images/svg/pattern_portal--violet.svg" alt="" />
             </div>
             <div class="text-content">
               <div class="heading-wrapper">
@@ -172,51 +206,53 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
                 animi?
               </p>
-              <a href="" class="btn btn-x1 btn-violet-fill">Подробнее</a>
+              <a href="./pages/coffee.html" class="btn btn-x1 btn-violet-fill"
+                >Подробнее</a
+              >
             </div>
             <div class="pattern-right">
-              <img src="./images/pattern_3.png" alt="" />
+              <img src="./images/svg/pattern_portal--violet.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
+      <!-- SECTION COFFEE NEW -->
       <section class="section-welcome-page__coffee_new">
         <div class="container">
-          <h1 class="font">Новинки</h1>
           <div class="cards-wrapper">
             <div class="card">
-              <div class="card-image">
-                <img src="./images/coffee-1.jpg" alt="" />
+              <div class="card-icon">
+                <i class="far fa-coffee-togo"></i>
               </div>
-              <h6 class="card-title">Медовый Латте</h6>
-              <p class="card-text">Очень вкусный латте, честное слово</p>
-              <a href="" class="btn btn-x2 btn-black">Меню</a>
+              <h1 class="font-white">Кофе</h1>
+              <a href="#" class="btn btn-x1 btn-round btn-white">Подробнее</a>
             </div>
             <div class="card">
-              <div class="card-image">
-                <img src="./images/coffee-1.jpg" alt="" />
+              <div class="card-icon">
+                <i class="far fa-users-crown"></i>
               </div>
-              <h6 class="card-title">Медовый Латте</h6>
-              <p class="card-text">Очень вкусный латте, честное слово</p>
-              <a href="" class="btn btn-x2 btn-black">Меню</a>
+              <h1 class="font-white">Команда</h1>
+              <a href="#" class="btn btn-x1 btn-round btn-white">Подробнее</a>
             </div>
             <div class="card">
-              <div class="card-image">
-                <img src="./images/coffee-1.jpg" alt="" />
+              <div class="card-icon">
+                <i class="far fa-sparkles"></i>
               </div>
-              <h6 class="card-title">Медовый Латте</h6>
-              <p class="card-text">Очень вкусный латте, честное слово</p>
-              <a href="" class="btn btn-x2 btn-black">Меню</a>
+              <h1 class="font-white">Новинки</h1>
+              <a href="#" class="btn btn-x1 btn-round btn-white">Меню</a>
             </div>
           </div>
         </div>
       </section>
       <!-- SECTION LECTORIUM -->
-      <section class="section--welcome-lectorium">
+      <section id="lectorium" class="section--welcome-lectorium">
         <div class="container">
           <div class="grid-container">
             <div class="text-content">
-              <h1 class="font-white">Лекторий</h1>
+              <h1 class="font-white">
+                Лекторий <br />
+                "Другие Измерения"
+              </h1>
               <p class="small-description font-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem architecto iure, tempora consequatur id
@@ -226,62 +262,76 @@
             </div>
             <div class="lections">
               <div class="card-lection">
-                <h5 class="font-white">Когнитивная Психология</h5>
-                <h6 class="font-white">28/09 — 17:20</h6>
-                <p class="font-white">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="" class="btn btn-x3 btn-violet">Перейти</a>
+                <div class="card-content">
+                  <h5 class="font-white">Когнитивная Психология</h5>
+                  <h6 class="font-white">28/09 — 17:35</h6>
+                  <p class="font-white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ab, hic!
+                  </p>
+                </div>
+                <div class="card-image"></div>
+                <a href="" class="btn-round">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
               <div class="card-lection">
-                <h5 class="font-white">Великий ДАУ</h5>
-                <h6 class="font-white">01/10 — 19:00</h6>
-                <p class="font-white">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="" class="btn btn-x3 btn-violet">Перейти</a>
+                <div class="card-content">
+                  <h5 class="font-white">Когнитивная Психология</h5>
+                  <h6 class="font-white">28/09 — 17:35</h6>
+                  <p class="font-white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ab, hic!
+                  </p>
+                </div>
+                <div class="card-image"></div>
+                <a href="" class="btn-round">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
               <div class="card-lection">
-                <h5 class="font-white">Вечер Философии</h5>
-                <h6 class="font-white">05/10 — 20:30</h6>
-                <p class="font-white">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="" class="btn btn-x3 btn-violet">Перейти</a>
+                <div class="card-content">
+                  <h5 class="font-white">Когнитивная Психология</h5>
+                  <h6 class="font-white">28/09 — 17:35</h6>
+                  <p class="font-white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ab, hic!
+                  </p>
+                </div>
+                <div class="card-image"></div>
+                <a href="" class="btn-round">
+                  <i class="fas fa-angle-right"></i>
+                </a>
               </div>
+              <div class="card-lection">
+                <div class="card-content">
+                  <h5 class="font-white">Когнитивная Психология</h5>
+                  <h6 class="font-white">28/09 — 17:35</h6>
+                  <p class="font-white">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ab, hic!
+                  </p>
+                </div>
+                <div class="card-image"></div>
+                <a href="" class="btn-round">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+              <a
+                href="./pages/lectorium.html"
+                class="btn btn-x1 btn-round btn-red"
+                >Больше Cобытий</a
+              >
             </div>
           </div>
         </div>
       </section>
       <!-- SECTION CONTACTS -->
-      <section class="section--welcome-contacts">
-        <div class="shape-divider-bottom">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".9"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".9"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
+      <section id="contacts" class="section--welcome-contacts">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A897cdbbe5c833f3c2cc7ccfdeec646c946831b49f2b5d281401783e7bff4b854&amp;source=constructor"
           width="100%"
-          height="500"
+          height="600"
           frameborder="0"
         ></iframe>
         <div class="container">
@@ -294,20 +344,7 @@
               <p class="card-text">
                 гор. Верхняя-Пышма, ул.Успенский Проспект, 99
               </p>
-            </div>
-            <div class="card">
-              <div class="card-icon">
-                <i class="fas fa-phone rotated"></i>
-              </div>
-              <h6 class="card-title">Наш телефон</h6>
-              <p class="card-text">+7-(922)-214-917-8</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <h6 class="card-title">Наш Email</h6>
-              <p class="card-text">dalvelab@gmail.com</p>
+              <a href="" class="btn btn-x1 btn-black-fill">Контакты</a>
             </div>
           </div>
         </div>
@@ -315,6 +352,29 @@
     </main>
     <!-- Footer -->
     <footer>
+      <div class="shape-divider-bottom">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".9"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".9"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
       <div class="container">
         <div class="footer-logo">
           <img src="./images/logo-footer.png" alt="" />
@@ -342,6 +402,6 @@
     </footer>
 
     <!-- JS -->
-    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
