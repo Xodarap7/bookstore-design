@@ -72,13 +72,16 @@ section {
 }
 
 .container {
-  width: 1270px;
+  width: 850px;
   height: auto;
   margin: auto;
   display: flex;
   flex-direction: column;
   position: relative;
-  @include screen(desktop) {
+  // @include screen(desktop) {
+  //   width: 98%;
+  // }
+  @media screen and(max-width: 855px) {
     width: 98%;
   }
 }

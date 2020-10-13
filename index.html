@@ -68,53 +68,8 @@
     </aside>
 
     <!-- PORTALS -->
-    <div class="portal-wrapper global-portal-left">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        width="100%"
-        height="100%"
-      >
-        <polygon
-          class="triangle triangle-left"
-          points="0 1080 220 0 0 0 0 1080"
-        />
-      </svg>
-      <img
-        src="./images/svg/logo-big--white.svg"
-        class="logo-vertical"
-        alt=""
-      />
-      <img
-        src="./images/svg/logo-square-white.svg"
-        class="logo-horizontal"
-        alt=""
-      />
-    </div>
-    <div class="portal-wrapper global-portal-right">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        height="100%"
-        width="100%"
-      >
-        <polygon
-          class="triangle triangle-right"
-          points="220 1080 0 1079.86 220 0 220 1080"
-        />
-      </svg>
-      <div class="menu-links">
-        <a class="link-hover-red" href="#books" id="anchorLink">Книги</a>
-        <a class="link-hover-red" href="#coffee" id="anchorLink">Кофе</a>
-        <a class="link-hover-red" href="#lectorium" id="anchorLink"
-          >Др И<span class="fix-font">з</span>мерения</a
-        >
-        <a class="link-hover-red" href="#contacts" id="anchorLink">Контакты</a>
-        <a class="link-hover-red" href="#contacts" id="anchorLink"
-          >Войти / Регистрация</a
-        >
-      </div>
-    </div>
+    <div class="portal-wrapper global-portal-left"></div>
+    <div class="portal-wrapper global-portal-right"></div>
     <!-- CONTENT -->
     <main>
       <!-- SECTION--WELCOME -->
@@ -135,14 +90,14 @@
               </h1></a
             >
           </div>
-          <div class="slider-btns-wrapper">
+          <!-- <div class="slider-btns-wrapper">
             <button class="btn-slider btn-left">
               <i class="far fa-chevron-left"></i>
             </button>
             <button class="btn-slider btn-right">
               <i class="far fa-chevron-right"></i>
             </button>
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- SECTION BOOKS -->
@@ -496,7 +451,7 @@
 
     <!-- JS -->
     <script src="./js/index.js"></script>
-    <script>
+    <!-- <script>
       const portalLeft = document.querySelector(".triangle-left");
       const portalRight = document.querySelector(".triangle-right");
 
@@ -510,7 +465,7 @@
               "points",
               "300 1080 0 1079.86 300 0 300 1080"
             );
-          } else if (width > 767) {
+          } else if (width > 800) {
             portalLeft.setAttribute("points", "0 1080 220 0 0 0 0 1080");
             portalRight.setAttribute(
               "points",
@@ -525,6 +480,6 @@
           }
         })
       );
-    </script>
+    </script> -->
   </body>
 </html>
