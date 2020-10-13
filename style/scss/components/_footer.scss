@@ -23,6 +23,7 @@ footer {
     height: 100%;
     align-items: center;
     margin-bottom: 0;
+    margin-top: 10px;
     flex-direction: row;
     justify-content: space-between;
     @include screen(tablet-wide) {
@@ -33,34 +34,6 @@ footer {
       height: 100px;
       @include screen(tablet-wide) {
         margin-top: 15px;
-      }
-    }
-    .social-links {
-      width: 220px;
-      height: auto;
-      display: flex;
-      justify-content: space-between;
-      @include screen(tablet-wide) {
-        margin: 15px 0px 15px 0px;
-      }
-      .link {
-        width: 60px;
-        height: 60px;
-        background-color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        i {
-          color: $black;
-          font-size: 28px;
-          transition: 0.1s ease-in-out;
-        }
-        &:hover {
-          i {
-            color: $red;
-          }
-        }
       }
     }
     .footer-links {
@@ -75,10 +48,6 @@ footer {
         a {
           color: $white;
           margin-top: 8.5px;
-          transition: 0.1s ease-in-out;
-          &:hover {
-            color: $red;
-          }
         }
       }
       @include screen(tablet-wide) {

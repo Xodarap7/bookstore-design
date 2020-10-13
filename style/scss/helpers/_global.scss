@@ -20,10 +20,55 @@ main {
   position: relative;
 }
 
+.margined-navbar {
+  margin-top: 60px;
+}
+
 section {
   width: 100%;
   height: auto;
   position: relative;
+  .section-title {
+    margin-top: 25px;
+    @include screen(tablet) {
+      text-align: center;
+    }
+  }
+  .content-bar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    margin: 20px 0px 20px 0px;
+    align-items: center;
+    .back-button {
+      width: 100px;
+      a {
+        color: $black;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      &:hover {
+        a {
+          color: $red;
+        }
+      }
+    }
+    .button-group {
+      display: flex;
+      button {
+        outline: none;
+      }
+      @media screen and(max-width: 550px) {
+        flex-direction: column-reverse;
+        button {
+          &:last-child {
+            border-left: 1px solid $black !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 .container {
@@ -35,5 +80,59 @@ section {
   position: relative;
   @include screen(desktop) {
     width: 98%;
+  }
+}
+
+.social-links {
+  width: 220px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  @include screen(tablet-wide) {
+    margin: 15px 0px 15px 0px;
+  }
+  .link {
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    i {
+      color: $black;
+      font-size: 28px;
+      transition: 0.1s ease-in-out;
+    }
+    &:hover {
+      i {
+        color: $red;
+      }
+    }
+  }
+}
+
+.pagination {
+  width: auto;
+  min-width: 180px;
+  height: 60px;
+  margin: 50px auto 0px auto;
+  display: flex;
+  .btn-pagination {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $gray;
+    border-left: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.15s ease-in-out;
+    &:first-child {
+      border-left: 1px solid $gray;
+    }
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+      color: $white;
+    }
   }
 }

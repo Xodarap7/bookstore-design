@@ -63,6 +63,14 @@ a {
   font-family: "Montserrat", sans-serif;
   color: $black;
 }
+
+.link-hover-red {
+  transition: 0.15s ease-in-out;
+  &:hover {
+    color: $red !important;
+  }
+}
+
 li {
   list-style-type: none;
 }

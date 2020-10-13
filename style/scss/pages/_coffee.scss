@@ -1,0 +1,345 @@
+.section--coffee-page__hero {
+  .container {
+    min-height: 100vh;
+    @include screen(tablet-wide) {
+      width: 100%;
+    }
+  }
+  .portal-image {
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-20%);
+    img {
+      min-height: 100%;
+    }
+    @include screen(tablet-wide) {
+      display: none;
+    }
+  }
+  .slider--default {
+    width: 80%;
+    height: 600px;
+    right: 0;
+    top: 20%;
+    transform: translateY(-20%);
+    .slide {
+      opacity: 1;
+    }
+    @include screen(tablet-wide) {
+      width: 100%;
+      height: 70vh;
+      position: relative;
+      top: 0;
+      transform: translateY(0);
+    }
+  }
+  .slider-btns-wrapper {
+    width: 60px;
+    right: 10px;
+  }
+  .section-title-group {
+    width: 200px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    h1 {
+      font-size: 5.5rem;
+      font-family: IgraSans;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    .btn-scroll-down {
+      width: 70px;
+      height: 70px;
+      background-color: $red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-top: 15px;
+      cursor: pointer;
+      .arrow-wrapper {
+        width: 50px;
+        height: 50px;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: relative;
+      }
+      .animated-icon {
+        position: absolute;
+        animation: Arrow 1s infinite;
+      }
+
+      @keyframes Arrow {
+        0% {
+          top: 0;
+          opacity: 0.2;
+        }
+        50% {
+          top: 40%;
+          opacity: 1;
+        }
+        100% {
+          top: 60%;
+          opacity: 0;
+        }
+      }
+      @include screen(phone) {
+        width: 60px;
+        height: 60px;
+        .arrow-wrapper {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    @include screen(tablet-wide) {
+      top: 35%;
+      transform: translateY(-35%);
+      left: 20px;
+    }
+    @include screen(phone) {
+      top: 20%;
+      transform: translateY(-20%);
+      left: 20px;
+      h1 {
+        font-size: 4.5rem;
+      }
+    }
+  }
+  .cards-wrapper {
+    width: 80%;
+    height: 30vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    .card {
+      width: 250px;
+      height: auto;
+      border-radius: 0;
+      box-shadow: none;
+      align-items: flex-start;
+      background-color: transparent;
+      .card-title {
+        text-transform: uppercase;
+      }
+      .card-description {
+        margin-top: 10px;
+        color: $dimgray;
+        line-height: 1.5;
+        width: 250px;
+        text-align: left;
+      }
+      .card-title {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -45px;
+          top: 0;
+          width: 70px;
+          height: 30px;
+          background-color: $red;
+          opacity: 0.2;
+        }
+      }
+    }
+    @include screen(tablet-wide) {
+      width: 100%;
+      align-items: center;
+      position: relative;
+    }
+    @media screen and (max-width: 830px) {
+      justify-content: center;
+      height: auto;
+      .card {
+        width: 100%;
+        align-items: center;
+        .card-description {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.section--coffee-team {
+  min-height: 50vh;
+  background-color: $light-gray;
+  .cards-wrapper {
+    margin-top: 15px;
+    justify-content: space-between;
+    .card {
+      width: 310px;
+      height: 290px;
+      box-shadow: none;
+      margin-right: 10px;
+      .card-title {
+        text-align: left;
+        margin-left: 10px;
+      }
+      .card-description {
+        color: $dimgray;
+        line-height: 1.5;
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }
+    @media screen and (max-width: 672px) {
+      justify-content: center;
+      .card {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.section--coffee-about-coffee {
+  min-height: 50vh;
+  background-color: $light-gray;
+  .cards-wrapper {
+    justify-content: space-between;
+    .card {
+      width: 410px;
+      height: 220px;
+      box-shadow: none;
+      margin: 50px 10px 0px 0px;
+      flex-direction: row;
+      .card-image {
+        width: 180px;
+        height: 200px;
+        border-radius: 0;
+        overflow: visible;
+        img {
+          margin-top: -30px;
+        }
+      }
+      .card-content {
+        width: calc(100% - 200px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+        padding-right: 20px;
+        .card-title {
+          text-align: left;
+        }
+        .card-subtitle {
+          color: $dimgray;
+          margin: 3px 0px 3px 0px;
+        }
+        .card-description {
+          font-size: 13px;
+        }
+      }
+      .card-decoration {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        right: -17.5px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $light-gray;
+      }
+      @include screen(phone) {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        .card-image {
+          width: 300px;
+          height: 200px;
+          display: flex;
+          justify-content: center;
+          img {
+            max-height: 100%;
+          }
+        }
+        .card-content {
+          padding: 0px 10px 10px 10px;
+          width: 100%;
+        }
+      }
+    }
+    @media screen and (max-width: 875px) {
+      justify-content: center;
+      .card {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.section--coffee-menu {
+  .cards-wrapper {
+    justify-content: space-between;
+    @media screen and (max-width: 648px) {
+      justify-content: center;
+      .card {
+        margin-right: 0;
+      }
+    }
+  }
+  .card {
+    width: 300px;
+    height: 340px;
+    margin-right: 10px;
+    align-items: flex-start;
+    &:first-child {
+      background-color: $red;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $red;
+      transition: 0.4s ease-in-out;
+      clip-path: circle(60px at 95% 95%);
+    }
+    &:hover {
+      &::after {
+        clip-path: circle(60px at 150% 150%);
+      }
+      .card-price {
+        padding: 10px;
+        background-color: $red;
+      }
+    }
+    .card-image {
+      height: 220px;
+    }
+    .card-title {
+      padding-left: 10px;
+    }
+    .card-description {
+      padding: 5px 35px 0px 10px;
+    }
+    .card-price {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 2;
+      font-weight: 500;
+      font-size: 20px;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

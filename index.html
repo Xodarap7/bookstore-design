@@ -10,46 +10,140 @@
     <link rel="stylesheet" href="./style/css/main.min.css" />
   </head>
   <body>
-    <nav class="fixed-top-menu">
+    <!-- NAVBAR FIXED  -->
+    <!-- <nav class="nav-fixed-top nav-main-page">
       <div class="container">
+        <button class="open-sidebar-button">
+          <i class="fal fa-bars"></i>
+        </button>
         <div class="nav-logo">
-          <img src="./images/logo_stars.png" alt="" />
+          <img src="./images/svg/logo-square--black.svg" alt="" />
         </div>
         <div class="nav-links">
-          <a href="#books" id="anchorLink" class="link">Книги</a>
-          <a href="#coffee" id="anchorLink" class="link">Кофе</a>
-          <a href="#lectorium" id="anchorLink" class="link">Др. Измерения</a>
-          <a href="#contacts" id="anchorLink" class="link">| Контакты</a>
+          <a class="link-hover-red" href="">Книги</a>
+          <a class="link-hover-red" href="">Кофе</a>
+          <a class="link-hover-red" href=""
+            >Др. И<span class="fix-font">з</span>мерения</a
+          >
+          <a class="link-hover-red" href="">Контакты</a>
+        </div>
+        <div class="nav-auth-buttons">
+          <a class="link-hover-red" href="./pages/login.html">Вход</a>
+          <p>/</p>
+          <a class="link-hover-red" href="./pages/register.html">Регистрация</a>
         </div>
       </div>
-      <div class="nav-sidebar-button"></div>
-    </nav>
+    </nav> -->
+
+    <!-- TOPBAR -->
+    <aside class="sidebar">
+      <button class="close-sidebar-button">
+        <i class="fal fa-times"></i>
+      </button>
+      <div class="content">
+        <div class="logo">
+          <img src="/images/svg/logo-portal--white.svg" alt="" />
+        </div>
+        <div class="sidebar-links">
+          <a href="./pages/books.html">Книги</a>
+          <a href="./pages/coffee.html">Кофе</a>
+          <a href="./pages/lectorium.html"
+            >Др И<span class="fix-font">з</span>мерения</a
+          >
+          <a href="./pages/contacts.html">Контакты</a>
+          <a href="./pages/login.html">Войти / Регистрация</a>
+        </div>
+        <div class="social-links">
+          <a href="#" target="_blank" class="link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" class="link">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="#" target="_blank" class="link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- PORTALS -->
+    <div class="portal-wrapper global-portal-left">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        width="100%"
+        height="100%"
+      >
+        <polygon
+          class="triangle triangle-left"
+          points="0 1080 220 0 0 0 0 1080"
+        />
+      </svg>
+      <img
+        src="./images/svg/logo-big--white.svg"
+        class="logo-vertical"
+        alt=""
+      />
+      <img
+        src="./images/svg/logo-square-white.svg"
+        class="logo-horizontal"
+        alt=""
+      />
+    </div>
+    <div class="portal-wrapper global-portal-right">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        height="100%"
+        width="100%"
+      >
+        <polygon
+          class="triangle triangle-right"
+          points="220 1080 0 1079.86 220 0 220 1080"
+        />
+      </svg>
+      <div class="menu-links">
+        <a class="link-hover-red" href="#books" id="anchorLink">Книги</a>
+        <a class="link-hover-red" href="#coffee" id="anchorLink">Кофе</a>
+        <a class="link-hover-red" href="#lectorium" id="anchorLink"
+          >Др И<span class="fix-font">з</span>мерения</a
+        >
+        <a class="link-hover-red" href="#contacts" id="anchorLink">Контакты</a>
+        <a class="link-hover-red" href="#contacts" id="anchorLink"
+          >Войти / Регистрация</a
+        >
+      </div>
+    </div>
     <!-- CONTENT -->
     <main>
-      <section class="section--welcome-page__hero particles-js">
-        <div class="container">
-          <div class="content-wrapper">
-            <div class="title__hero">
-              <a href="#books" id="anchorLink"><h1>Книги,</h1></a>
-              <a href="#coffee" id="anchorLink"><h1>Кофе</h1></a>
-              <a href="#lectorium" id="anchorLink"
-                ><h1>
-                  и Др. <br />
-                  И<span class="fix-font">з</span>мерения
-                </h1></a
-              >
-            </div>
-            <div class="slider__hero">
-              <div class="slides-wrapper">
-                <img src="./images/svg/portal_transparent.svg" alt="" />
-              </div>
-              <div class="slides">
-                <img src="./images/slider-image-1.jpg" alt="" class="slide" />
-              </div>
-            </div>
+      <!-- SECTION--WELCOME -->
+      <section class="section--welcome-page__hero">
+        <div class="slider--fullpage">
+          <div class="slides">
+            <img src="./images/slider-image-1.jpg" alt="" class="slide" />
           </div>
         </div>
-        <div class="bg-pattern"></div>
+        <div class="container">
+          <div class="title__hero">
+            <a href="#books" id="anchorLink"><h1>Книги,</h1></a>
+            <a href="#coffee" id="anchorLink"><h1>Кофе</h1></a>
+            <a href="#lectorium" id="anchorLink"
+              ><h1>
+                и Др. <br />
+                И<span class="fix-font">з</span>мерения
+              </h1></a
+            >
+          </div>
+          <div class="slider-btns-wrapper">
+            <button class="btn-slider btn-left">
+              <i class="far fa-chevron-left"></i>
+            </button>
+            <button class="btn-slider btn-right">
+              <i class="far fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
       </section>
       <!-- SECTION BOOKS -->
       <section id="books" class="section--welcome-page__books">
@@ -71,7 +165,7 @@
               </div>
               <div class="section--row-design">
                 <div class="design-container">
-                  <img src="./images/svg/double_star--black.svg" alt="" />
+                  <i class="fal fa-books"></i>
                 </div>
                 <div class="design-container">
                   <img src="./images/svg/double_star--black.svg" alt="" />
@@ -99,13 +193,13 @@
               </div>
               <div class="section--row-design">
                 <div class="design-container">
-                  <img src="./images/svg/double_star--black.svg" alt="" />
+                  <i class="fal fa-globe-snow"></i>
                 </div>
                 <div class="design-container">
-                  <img src="./images/svg/double_star--black.svg" alt="" />
+                  <i class="fal fa-pencil-paintbrush"></i>
                 </div>
                 <div class="design-container">
-                  <img src="./images/svg/double_star--black.svg" alt="" />
+                  <i class="fal fa-portal-enter"></i>
                 </div>
               </div>
             </div>
@@ -216,112 +310,112 @@
           </div>
         </div>
       </section>
-      <!-- SECTION COFFEE NEW -->
-      <section class="section-welcome-page__coffee_new">
-        <div class="container">
-          <div class="cards-wrapper">
-            <div class="card">
-              <div class="card-icon">
-                <i class="far fa-coffee-togo"></i>
-              </div>
-              <h1 class="font-white">Кофе</h1>
-              <a href="#" class="btn btn-x1 btn-round btn-white">Подробнее</a>
-            </div>
-            <div class="card">
-              <div class="card-icon">
-                <i class="far fa-users-crown"></i>
-              </div>
-              <h1 class="font-white">Команда</h1>
-              <a href="#" class="btn btn-x1 btn-round btn-white">Подробнее</a>
-            </div>
-            <div class="card">
-              <div class="card-icon">
-                <i class="far fa-sparkles"></i>
-              </div>
-              <h1 class="font-white">Новинки</h1>
-              <a href="#" class="btn btn-x1 btn-round btn-white">Меню</a>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- SECTION LECTORIUM -->
       <section id="lectorium" class="section--welcome-lectorium">
         <div class="container">
           <div class="grid-container">
             <div class="text-content">
-              <h1 class="font-white">
+              <h1 class="font-black">
                 Лекторий <br />
                 "Другие Измерения"
               </h1>
-              <p class="small-description font-white">
+              <p class="small-description font-black">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem architecto iure, tempora consequatur id
-                voluptatibus quisquam? Aut fugiat delectus exercitationem?
               </p>
-              <a href="" class="btn btn-x1 btn-white">Подробнее</a>
-            </div>
-            <div class="lections">
-              <div class="card-lection">
-                <div class="card-content">
-                  <h5 class="font-white">Когнитивная Психология</h5>
-                  <h6 class="font-white">28/09 — 17:35</h6>
-                  <p class="font-white">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ab, hic!
-                  </p>
-                </div>
-                <div class="card-image"></div>
-                <a href="" class="btn-round">
-                  <i class="fas fa-angle-right"></i>
-                </a>
-              </div>
-              <div class="card-lection">
-                <div class="card-content">
-                  <h5 class="font-white">Когнитивная Психология</h5>
-                  <h6 class="font-white">28/09 — 17:35</h6>
-                  <p class="font-white">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ab, hic!
-                  </p>
-                </div>
-                <div class="card-image"></div>
-                <a href="" class="btn-round">
-                  <i class="fas fa-angle-right"></i>
-                </a>
-              </div>
-              <div class="card-lection">
-                <div class="card-content">
-                  <h5 class="font-white">Когнитивная Психология</h5>
-                  <h6 class="font-white">28/09 — 17:35</h6>
-                  <p class="font-white">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ab, hic!
-                  </p>
-                </div>
-                <div class="card-image"></div>
-                <a href="" class="btn-round">
-                  <i class="fas fa-angle-right"></i>
-                </a>
-              </div>
-              <div class="card-lection">
-                <div class="card-content">
-                  <h5 class="font-white">Когнитивная Психология</h5>
-                  <h6 class="font-white">28/09 — 17:35</h6>
-                  <p class="font-white">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ab, hic!
-                  </p>
-                </div>
-                <div class="card-image"></div>
-                <a href="" class="btn-round">
-                  <i class="fas fa-angle-right"></i>
-                </a>
-              </div>
-              <a
-                href="./pages/lectorium.html"
-                class="btn btn-x1 btn-round btn-red"
-                >Больше Cобытий</a
+              <a href="./pages/lectorium.html" class="btn btn-x1 btn-black"
+                >Подробнее</a
               >
+            </div>
+            <div class="content-bar font-black">
+              <h4>Ближайшие Мероприятия</h4>
+              <div class="button-group">
+                <button class="btn btn-x1 btn-icon btn-black">
+                  Календарь <i class="fal fa-calendar-alt"></i>
+                </button>
+              </div>
+            </div>
+            <div class="cards-wrapper">
+              <a href="./pages/lection-single.html" class="card-lection">
+                <div class="card-image">
+                  <img src="./images/card-event-bg.jpg" alt="" />
+                  <div class="card-places">
+                    <h6>50</h6>
+                    <p>Мест</p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title font-black">
+                    Шведская Литература: кого надо знать
+                  </h6>
+                  <div class="card-date font-black">
+                    <h6>
+                      <span class="font-red">28 сен</span>
+                      — 17:35
+                    </h6>
+                  </div>
+                  <div class="card-description">
+                    <i class="fal fa-user-graduate"></i>
+                    <p>Высокинский Александр</p>
+                  </div>
+                </div>
+                <div class="card-next-btn-round">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </a>
+              <a href="./pages/lection-single.html" class="card-lection">
+                <div class="card-image">
+                  <img src="./images/card-event-bg.jpg" alt="" />
+                  <div class="card-places">
+                    <h6>50</h6>
+                    <p>Мест</p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title font-black">
+                    Шведская Литература: кого надо знать
+                  </h6>
+                  <div class="card-date font-black">
+                    <h6>
+                      <span class="font-red">28 сен</span>
+                      — 17:35
+                    </h6>
+                  </div>
+                  <div class="card-description">
+                    <i class="fal fa-user-graduate"></i>
+                    <p>Высокинский Александр</p>
+                  </div>
+                </div>
+                <div class="card-next-btn-round">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </a>
+              <a href="./pages/lection-single.html" class="card-lection">
+                <div class="card-image">
+                  <img src="./images/card-event-bg.jpg" alt="" />
+                  <div class="card-places">
+                    <h6>50</h6>
+                    <p>Мест</p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h6 class="card-title font-black">
+                    Шведская Литература: кого надо знать
+                  </h6>
+                  <div class="card-date font-black">
+                    <h6>
+                      <span class="font-red">28 сен</span>
+                      — 17:35
+                    </h6>
+                  </div>
+                  <div class="card-description">
+                    <i class="fal fa-user-graduate"></i>
+                    <p>Высокинский Александр</p>
+                  </div>
+                </div>
+                <div class="card-next-btn-round">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -350,8 +444,7 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
-    <footer>
+    <!-- <footer>
       <div class="shape-divider-bottom">
         <svg
           data-name="Layer 1"
@@ -393,15 +486,45 @@
         <div class="footer-links">
           <h6 class="font-white">Страницы:</h6>
           <ul class="links-list">
-            <a href="">Контакты</a>
-            <a href="">Лицензионное соглашение</a>
-            <a href="">Галерея</a>
+            <a class="link-hover-red" href="#">Контакты</a>
+            <a class="link-hover-red" href="#">Лицензионное соглашение</a>
+            <a class="link-hover-red" href="#">Галерея</a>
           </ul>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- JS -->
     <script src="./js/index.js"></script>
+    <script>
+      const portalLeft = document.querySelector(".triangle-left");
+      const portalRight = document.querySelector(".triangle-right");
+
+      document.addEventListener(
+        "DOMContentLoaded",
+        (window.onresize = function setPortalWidth() {
+          let width = window.innerWidth;
+          if (width > 980) {
+            portalLeft.setAttribute("points", "0 1080 300 0 0 0 0 1080");
+            portalRight.setAttribute(
+              "points",
+              "300 1080 0 1079.86 300 0 300 1080"
+            );
+          } else if (width > 767) {
+            portalLeft.setAttribute("points", "0 1080 220 0 0 0 0 1080");
+            portalRight.setAttribute(
+              "points",
+              "220 1080 0 1079.86 220 0 220 1080"
+            );
+          } else if (width > 500) {
+            portalLeft.setAttribute("points", "0 200 760 0 0 0 0 200");
+            portalRight.setAttribute("points", "760 200 0 200 760 0 760 200");
+          } else {
+            portalLeft.setAttribute("points", "0 150 500 0 0 0 0 150");
+            portalRight.setAttribute("points", "500 150 0 150 500 0 500 150");
+          }
+        })
+      );
+    </script>
   </body>
 </html>
