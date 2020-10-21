@@ -1,23 +1,28 @@
-.portal-wrapper {
-  width: 300px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  z-index: 6;
-}
-.global-portal-left {
-  left: 0;
-  background-image: url(../../images/svg/triangle-left.svg);
-  background-repeat: no-repeat;
-}
-.global-portal-right {
-  right: 0;
-  background-image: url(../../images/svg/triangle-left.svg);
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
-}
 .section--welcome-page__hero {
   min-height: 100vh;
+  overflow: hidden;
+  .portal-wrapper {
+    width: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  .global-portal-left {
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 100vh solid $black;
+    border-right: 250px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+  .global-portal-right {
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid $black;
+    border-left: 250px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
   .slider-btns-wrapper {
     @media screen and (max-width: 450px) {
       .btn-left {
@@ -40,6 +45,7 @@
       text-transform: uppercase;
       color: $white;
       letter-spacing: 2px;
+      margin-left: 100px;
       &:hover {
         color: $red;
       }

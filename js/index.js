@@ -1,13 +1,13 @@
 // Fixed Navbar
 const navbar = document.querySelector(".nav-main-page");
 
-// document.addEventListener("scroll", () => {
-//   if (window.pageYOffset > 100) {
-//     navbar.style.opacity = 1;
-//   } else {
-//     navbar.style.opacity = 0;
-//   }
-// });
+document.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    navbar.style.opacity = 1;
+  } else {
+    navbar.style.opacity = 0;
+  }
+});
 
 // Sidebar
 const openSidebar = document.querySelector(".open-sidebar-button");

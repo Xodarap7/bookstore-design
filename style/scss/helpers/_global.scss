@@ -61,27 +61,19 @@ section {
       }
       @media screen and(max-width: 550px) {
         flex-direction: column-reverse;
-        button {
-          &:last-child {
-            border-left: 1px solid $black !important;
-          }
-        }
       }
     }
   }
 }
 
 .container {
-  width: 900px;
+  width: 1270px;
   height: auto;
   margin: auto;
   display: flex;
   flex-direction: column;
   position: relative;
-  // @include screen(desktop) {
-  //   width: 98%;
-  // }
-  @media screen and(max-width: 900px) {
+  @include screen(desktop) {
     width: 98%;
   }
 }

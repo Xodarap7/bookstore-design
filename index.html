@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- NAVBAR FIXED  -->
-    <!-- <nav class="nav-fixed-top nav-main-page">
+    <nav class="nav-fixed-top nav-main-page">
       <div class="container">
         <button class="open-sidebar-button">
           <i class="fal fa-bars"></i>
@@ -33,7 +33,7 @@
           <a class="link-hover-red" href="./pages/register.html">Регистрация</a>
         </div>
       </div>
-    </nav> -->
+    </nav>
 
     <!-- TOPBAR -->
     <aside class="sidebar">
@@ -67,13 +67,13 @@
       </div>
     </aside>
 
-    <!-- PORTALS -->
-    <div class="portal-wrapper global-portal-left"></div>
-    <div class="portal-wrapper global-portal-right"></div>
     <!-- CONTENT -->
     <main>
       <!-- SECTION--WELCOME -->
       <section class="section--welcome-page__hero">
+        <!-- PORTALS -->
+        <div class="portal-wrapper global-portal-left"></div>
+        <div class="portal-wrapper global-portal-right"></div>
         <div class="slider--fullpage">
           <div class="slides">
             <img src="./images/slider-image-1.jpg" alt="" class="slide" />
@@ -90,14 +90,14 @@
               </h1></a
             >
           </div>
-          <!-- <div class="slider-btns-wrapper">
+          <div class="slider-btns-wrapper">
             <button class="btn-slider btn-left">
               <i class="far fa-chevron-left"></i>
             </button>
             <button class="btn-slider btn-right">
               <i class="far fa-chevron-right"></i>
             </button>
-          </div> -->
+          </div>
         </div>
       </section>
       <!-- SECTION BOOKS -->
@@ -399,7 +399,8 @@
         </div>
       </section>
     </main>
-    <!-- <footer>
+    <!-- FOOTER -->
+    <footer>
       <div class="shape-divider-bottom">
         <svg
           data-name="Layer 1"
@@ -447,39 +448,26 @@
           </ul>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- JS -->
     <script src="./js/index.js"></script>
-    <!-- <script>
-      const portalLeft = document.querySelector(".triangle-left");
-      const portalRight = document.querySelector(".triangle-right");
-
-      document.addEventListener(
-        "DOMContentLoaded",
-        (window.onresize = function setPortalWidth() {
-          let width = window.innerWidth;
-          if (width > 980) {
-            portalLeft.setAttribute("points", "0 1080 300 0 0 0 0 1080");
-            portalRight.setAttribute(
-              "points",
-              "300 1080 0 1079.86 300 0 300 1080"
-            );
-          } else if (width > 800) {
-            portalLeft.setAttribute("points", "0 1080 220 0 0 0 0 1080");
-            portalRight.setAttribute(
-              "points",
-              "220 1080 0 1079.86 220 0 220 1080"
-            );
-          } else if (width > 500) {
-            portalLeft.setAttribute("points", "0 200 760 0 0 0 0 200");
-            portalRight.setAttribute("points", "760 200 0 200 760 0 760 200");
-          } else {
-            portalLeft.setAttribute("points", "0 150 500 0 0 0 0 150");
-            portalRight.setAttribute("points", "500 150 0 150 500 0 500 150");
-          }
-        })
-      );
-    </script> -->
+    <script>
+      const leftPortal = document.querySelector(".global-portal-left");
+      const rightPortal = document.querySelector(".global-portal-right");
+      const navbar = document.querySelector(".nav-fixed-top");
+      window.addEventListener("scroll", () => {
+        let offsetY = window.pageYOffset;
+        if (offsetY > 60) {
+          navbar.style.opacity = 1;
+          leftPortal.style.left = "-300px";
+          rightPortal.style.right = "-300px";
+        } else {
+          navbar.style.opacity = 0;
+          leftPortal.style.left = 0;
+          rightPortal.style.right = 0;
+        }
+      });
+    </script>
   </body>
 </html>
