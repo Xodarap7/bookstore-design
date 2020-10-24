@@ -42,6 +42,7 @@
       }
     }
   }
+
   .nav-auth-buttons {
     display: flex;
     align-items: center;
@@ -50,6 +51,7 @@
       margin: 0px 7.5px 0px 7.5px;
     }
   }
+
   @include screen(tablet-wide) {
     .nav-logo,
     .nav-links {

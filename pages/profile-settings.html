@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книги, Кофе и Другие Измерения</title>
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="../style/css/icons.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/css/main.min.css" />
+</head>
+<body>
+  <!-- NAVBAR FIXED  -->
+  <nav class="nav-fixed-top nav-user-profile">
+    <div class="container">
+      <button class="open-sidebar-button">
+        <i class="fal fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a class="link-hover-red" href="">Книги</a>
+        <a class="link-hover-red" href="">Кофе</a>
+        <a class="link-hover-red" href=""
+          >Др. И<span class="fix-font">з</span>мерения</a
+        >
+        <a class="link-hover-red" href="">Контакты</a>
+      </div>
+      <div class="nav-auth-buttons">
+        <a class="link-hover-red" href="./login.html"
+        >Выход <i class="far fa-sign-out"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- TOPBAR -->
+  
+  <aside class="sidebar">
+    <button class="close-sidebar-button">
+      <i class="fal fa-times"></i>
+    </button>
+    <div class="content">
+      <div class="logo">
+        <img src="/images/svg/logo-portal--white.svg" alt="" />
+      </div>
+      <div class="sidebar-links">
+        <a href="./pages/books.html">Книги</a>
+        <a href="./pages/coffee.html">Кофе</a>
+        <a href="./pages/lectorium.html"
+          >Др И<span class="fix-font">з</span>мерения</a
+        >
+        <a href="./pages/contacts.html">Контакты</a>
+        <a href="./pages/login.html">Войти / Регистрация</a>
+      </div>
+      <div class="social-links">
+        <a href="#" target="_blank" class="link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank" class="link">
+          <i class="fab fa-vk"></i>
+        </a>
+        <a href="#" target="_blank" class="link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+  
+  <main class="margined-navbar">
+    <div class="topbar-user-profile">
+      <div class="container">
+        <div class="topbar-links">
+          <a href="" class="link-hover-red"
+            >События <i class="fal fa-calendar-star"></i></a
+          >
+          <a href="" class="link-hover-red top-bar-active-link"
+            >Настройки <i class="fal fa-cog"></i></a
+          >
+        </div>
+        <div class="user-parameters">
+          <div class="text">
+            <p class="user-name">Брагин Владислав</p>
+            <p class="user-email">dalvelab@gmail.com</p>
+          </div>
+          <div class="avatar"></div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <form class="profile-settings-form" action="" method="post">
+          <div class="input-group">
+            <label>Имя/Фамилия</label>
+            <input type="text">
+          </div>
+          <div class="input-group">
+            <label>Новый Пароль</label>
+            <input type="password">
+          </div>
+          <div class="input-group">
+            <label>Подтвердите Новый Пароль</label>
+            <input type="password">
+          </div>
+          <button type="submit" class="btn-x1 btn-red-fill">Сохранить</button>
+        </form>
+      </div>
+      
+    </section>
+  </main>
+</body>

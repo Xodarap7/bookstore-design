@@ -78,6 +78,10 @@ section {
   }
 }
 
+.top-bar-active-link {
+  border-bottom: 2px $red solid;
+}
+
 .social-links {
   width: 220px;
   height: auto;
