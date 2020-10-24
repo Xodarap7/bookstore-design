@@ -88,3 +88,39 @@ input {
     font-family: Montserrat;
   }
 }
+
+.lection-management-form {
+  margin-bottom: 30px;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 50px;
+    width: 910px;
+    margin-bottom: 20px;
+    .input-block {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      label {
+        color: $dimgray;
+      }
+      input {
+        width: 270px;
+        height: 40px;
+        background-color: $gray;
+        padding: 10px;
+        border-radius: 4px;
+        color: $third-black;
+        margin-top: 7.5px;
+      }
+    }
+  }
+  button {
+    width: 270px;
+    i {
+      margin-left: 15px;
+    }
+  }
+}

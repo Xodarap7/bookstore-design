@@ -1,0 +1,27 @@
+.container {
+  .cards-wrapper {
+    margin-top: 80px;
+    .card-square {
+      margin: 7.5px 15px 7.5px 0;
+      h3 {
+        text-transform: uppercase;
+        font-size: 25px;
+      }
+      .btn-x2 {
+        text-transform: uppercase;
+        padding: 0px 50px;
+      }
+      .btn-red-fill,
+      .btn-black-fill {
+        border: 1px solid $white;
+      }
+    }
+  }
+  @include screen(tablet) {
+    .cards-wrapper {
+      .card-square {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.container {
+  .topbar-admin-management {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 45px;
+    .button-group {
+      display: flex;
+      .btn {
+        margin: 0px 7.5px;
+        padding: 0px 20px;
+      }
+    }
+  }
+  .event-block {
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid $black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    .event-info {
+      display: flex;
+      flex-wrap: wrap;
+      .info-block {
+        margin: 0px 20px;
+        text-transform: uppercase;
+        .info-block-name {
+          h6 {
+            font-weight: 500;
+            font-size: 10px;
+            color: $dimgray;
+          }
+        }
+        .info-block-content {
+          margin-top: 5px;
+          h6 {
+            color: $black;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+      #event-title {
+        width: 250px;
+      }
+    }
+    .event-links {
+      display: flex;
+      a {
+        margin: auto 0px auto 15px;
+      }
+      .btn-green-fill {
+        padding: 0px 50px;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  @include screen(desktop) {
+    .topbar-admin-management {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .button-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        .btn {
+          margin: 0px 7.5px 15px 7.5px;
+        }
+      }
+    }
+    .event-block {
+      .event-info {
+        .info-block {
+          margin: 10px 20px;
+        }
+      }
+    }
+  }
+  @include screen(tablet-wide) {
+    .event-block {
+      .event-links {
+        flex-direction: column;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .event-block {
+      flex-direction: column;
+      .event-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        a {
+          width: 90%;
+          margin: 5px auto;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
