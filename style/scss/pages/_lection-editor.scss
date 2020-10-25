@@ -19,9 +19,11 @@
     }
   }
   @include screen(tablet-wide) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-      width: auto;
+    .lection-management-form {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+      }
     }
   }
   @media screen and (max-width: 600px) {
